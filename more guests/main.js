@@ -1,0 +1,13 @@
+var guestArray = ["hania", "moeez", "ayesha"];
+var canNotAttened = "ayesha";
+var newGuest = "aina";
+guestArray[guestArray.indexOf(canNotAttened)] = newGuest;
+console.log(guestArray);
+// guestArray.map((items)=> console.log (`hello, ${items} you are invited to dinner`));
+console.log("Welcome all we found a bigger dinner table!");
+guestArray.unshift("bushra");
+var middleGuest = "aqsa";
+var midleIndex = guestArray.length / 2;
+guestArray.splice(midleIndex, 0, middleGuest);
+guestArray.push("maria");
+guestArray.map(function (item) { return console.log("\nDear ".concat(item, " You are invited to dinner!")); });
